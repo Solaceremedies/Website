@@ -18,7 +18,7 @@
     h1, h2 {
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
-      color: black; /* Header text color changed to black */
+      color: black;
     }
 
     p {
@@ -29,7 +29,6 @@
     header {
       background: url('https://images.unsplash.com/photo-1580281658628-6329b0b2c5b6') no-repeat center center/cover;
       height: 300px;
-      color: black; /* Ensure header text is black */
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -61,7 +60,7 @@
     .burger-menu div {
       width: 25px;
       height: 3px;
-      background-color: black; /* Burger menu color changed to black */
+      background-color: black;
     }
 
     .nav-links {
@@ -73,7 +72,7 @@
 
     .nav-links a {
       text-decoration: none;
-      color: black; /* Navigation links color changed to black */
+      color: black;
       font-size: 1rem;
       transition: color 0.3s;
     }
@@ -204,6 +203,44 @@
     <section id="products" class="mb-5">
       <h2>Our Products</h2>
       <ul class="list-group">
-        <li class="list-group-item">GPM
-::contentReference[oaicite:1]{index=1}
- 
+        <li class="list-group-item">GPMF M1</li>
+        <li class="list-group-item">GPMF M2</li>
+        <li class="list-group-item">GPMF M1 Forte</li>
+        <li class="list-group-item">GPMF M2 Forte</li>
+        <li class="list-group-item">Definit-LA</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="mb-5">
+      <h2>Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Pharma Company. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Burger Menu Toggle
+    const burgerMenu = document.getElementById('burgerMenu');
+    const navLinks = document.getElementById('navLinks');
+
+    burgerMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile');
+    });
+  </script>
+</body>
+</html>
